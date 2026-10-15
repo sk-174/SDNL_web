@@ -1,0 +1,83 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+out/
+.astro/
+.vite/
+.turbo/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Secrets & deploy credentials — never commit these
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+!public/**/*.crt
+cloudflared/
+credentials*.json
+*.credentials.json
+deploy-secrets/
+
+# Deploy artifacts
+deploy/
+releases/
+*.tar.gz
+*.tgz
+*.zip
+!public/**/*.zip
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Caches
+.cache/
+.eslintcache
+.stylelintcache
+.npm
+.yarn-integrity
+test-results/
+playwright-report/
+.vercel
+.netlify
+
+# Testing
+coverage/
+.nyc_output/
+
+# IDEs and editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Local scratch
+notes.local.md
+scratch/
+TODO.local.md
